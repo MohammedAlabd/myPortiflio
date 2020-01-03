@@ -2,42 +2,168 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/492942df8d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Mohammed AlAbd</title>
 </head>
 
 <body>
     <header>
-        <h1>Hi I am Mohammed</h1>
-        <h2>I am a web devloper</h2>
-        <nav>
-            <ul>
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#">projects</a></li>
-                <li> <a href="#">contact us</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="navbar-brand">Navbar</div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </nav>
 
     </header>
     <main>
-        <section id="personal">
-            <img src="./img/photo_2019-12-10_12-3a9-45.jpg" alt="Mohammed picture" length="30%" width="30%"> <br>
-            <caption>Mohammed Alabd</caption>
-        </section>
+            <div class="container-fluid text-light">
+                <div class="row justify-content-around alighn-items-centar">
+                        <section id="personal" class="py-4 mt-5">
+                            <h1 class="display-4">Hi I am Mohammed</h1>
+                            <h4>I am a web devloper</h4>
 
+                            <img src="./img/photo_2019-12-10_12-3a9-45.jpg" alt="Mohammed picture" length="30%"
+                                width="30%">
+                            <br>
+                            <caption>Mohammed Alabd</caption>
+                            <p>
+                                I am Mohammed Abdulbary, I am from iraq and I'm living now at Turky Istanbul,
+                            </p>
+                        </section>
+                    
+                </div>
+            </div>
+        <div class="container-fluid text-light" id="infoNav">
+            <h2 class="text-center py-4">Personal information</h2>
+            <div class="row justify-content-center ">
+
+                <nav class="col">
+                    <ul class="nav nav-tabs justify-content-center flex-column flex-md-row">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#cert" data-toggle="tab">certifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#langSkils" data-toggle="tab" >Language skils</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#some" data-toggle="tab">Some Examples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">comming soon</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="tab-content py-5">
+                    <div class="tab-pane active" id="cert">
+                        <h2>certifecations</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nobis adipisci minus,
+                            debitis cumque blanditiis iure aperiam enim similique sapiente est ut officiis beatae! Velit
+                            sed veniam deserunt aut voluptatum!</p>
+                    </div>
+                    <div class="tab-pane" id="langSkils">
+                        <h2>Language skils</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nobis adipisci minus,
+                            debitis cumque blanditiis iure aperiam enim similique sapiente est ut officiis beatae! Velit
+                            sed veniam deserunt aut voluptatum!</p>
+                    </div>
+                    <div class="tab-pane" id="some">
+                        <div class="container-fluid">
+                            <h2>Some examples</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nobis adipisci minus,
+                                debitis cumque blanditiis iure aperiam enim similique sapiente est ut officiis beatae! Velit
+                                sed veniam deserunt aut voluptatum!</p>
+                                <div class="container" id="cards">
+                                    <div class="row justify-content-around text-dark ">
+                                        <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                                            <img src="./img/7-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">archetecture</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                                            <img src="./img/7-2.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Interior Desighn</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                                            <img src="./img/7-3.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Concept</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer contact>
-        <h2>Folow me On</h2>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/assassin.first1/" target=_blank>Facebook</a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/m.u.h96" target=_blank>Instagram</a>
-            </li>
-            <li><a href="#" target=_blank>Twitter</a></li>
-        </ul>
+    <footer id="contact">
+        <div class="container-fluid bg-info py-4">
+            <h2>Folow me On</h2>
+            <div class="row justify-content-center">
+            <nav class=" navbar-expand navbar-light justify-content-center navbar-nav">
+                    <ul class="navbar-nav  justify-content-around row row-cols-2 row-cols-sm-4">
+                            <a class="nav-link" href="#"><i class="fab fa-facebook-square fa-3x "></i> <span class="sr-only">(current)</span></a>
+                            <a class="nav-link " href="#"><i class="fab fa-instagram fa-3x "></i></a>
+                            <a class="nav-link " href="#"><i class="fab fa-twitter-square fa-3x "></i></a>
+                            <a class="nav-link" href="#"><i class="fab fa-github-square fa-3x "></i></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
