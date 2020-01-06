@@ -19,6 +19,7 @@ header{
 }
 h1,h4,img,p{
     margin: 5px;
+    
 }
 footer{
     background-color: #9338e657;
@@ -57,4 +58,70 @@ li a:hover{
 }
 a i{
     size: 7ex;
+}
+
+/*/////animation///*/
+nav{
+    animation-name:slidingStartLeft;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+section{
+    animation-name:slidingStartRight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+h1:hover{
+    animation-name:scaleMe;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+img:hover{
+    animation-name:rotateMe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+i{
+    animation-name:rotateMe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+} 
+/*// keyframes//*/
+@keyframes rotateMe{
+    from {
+        transform: rotateZ(0deg);   
+    }
+    to {
+        transform:rotatez(360deg);
+    }
+    
+}
+@keyframes scaleMe{
+    frome{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+@keyframes slidingStartRight{
+    from{
+        transform: translateX(1000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slidingStartLeft{
+    from{
+        transform: translateX(-1000px);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
